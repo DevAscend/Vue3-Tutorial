@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3 Tutorial</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <h1>Vue 3 Tutorial</h1>
+    <div id="app">
+      <div>{{ fruit }} , {{ amount }}</div>
+      <div v-if="showButtons">
+        <button @click="amount++">Increase</button>
+        <button @click="amount--">Decrease</button>
+        <button @click="fruit = 'Banana'">Change Fruit</button>
+        <div @click="changeFruit('Blueberry')">Change Fruit</div>
+      </div>
+      <button @click="toggleButtons">Toggle Buttons</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
